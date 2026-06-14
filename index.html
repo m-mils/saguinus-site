@@ -3,14 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Saguinus</title>
+    <title>Saguinus — A document-shaped markdown editor</title>
+    <meta
+      name="description"
+      content="Saguinus is a document-shaped markdown editor for Windows with live rendering, math, tables, task lists, and clean markdown round-tripping."
+    />
+    <link rel="icon" href="assets/saguinus.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="site-header">
+      <a class="logo-link" href="index.html">
+        <img src="assets/saguinus.png" alt="" />
+        Saguinus
+      </a>
+      <nav class="site-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="https://github.com/m-mils/Saguinus" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </header>
+
     <main>
-      <h1>Saguinus</h1>
-      <p>A clean, document-shaped markdown editor.</p>
-      <a class="download-btn" href="#">Download for Windows</a>
+      <section class="hero">
+        <img src="assets/saguinus.png" alt="Saguinus logo" />
+        <h1>Saguinus</h1>
+        <p class="tagline">A clean, document-shaped markdown editor.</p>
+        <p class="hero-desc">
+          Write markdown the way it's meant to feel — a continuous page with
+          no interrupting breaks, page guides that show where your document
+          will split on export, live formatting as you type, and a plain-text
+          file underneath that stays clean no matter how much you copy, paste,
+          and edit.
+        </p>
+        <a
+          id="download-btn"
+          class="download-btn"
+          href="https://github.com/m-mils/Saguinus/releases/latest"
+        >
+          Download for Windows
+        </a>
+        <p class="hero-meta" id="download-meta">Windows</p>
+        <p class="hero-note">
+          Free to use during live testing — donations are welcome if you find
+          it useful.
+        </p>
+      </section>
+
+      <section class="features">
+        <div class="feature">
+          <h3>Page guides, not page breaks</h3>
+          <p>
+            Write in one continuous flow with no interruptions — subtle page
+            guides show exactly where pages will fall, so what you see lines
+            up with what you get when you export to PDF.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Live rich rendering</h3>
+          <p>
+            Headings, bold, italics, strikethrough, links, and images render
+            as you type, while the file underneath stays plain markdown.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Math with KaTeX</h3>
+          <p>
+            Write inline and block math using familiar LaTeX syntax, with
+            editable source and dedicated toolbar buttons.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Tables &amp; task lists</h3>
+          <p>
+            Build tables and checkbox task lists that render cleanly and
+            round-trip back to markdown without losing structure.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Code blocks</h3>
+          <p>
+            Syntax-highlighted code blocks for sharing snippets, configs, and
+            examples alongside your writing.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Built-in markdown guide</h3>
+          <p>
+            A quick-reference "Markdown Guide" panel covers every supported
+            construct, right inside the app — handy for newcomers.
+          </p>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <p>
+        Saguinus is currently free during live testing —
+        <a href="https://github.com/m-mils/Saguinus/releases/latest" target="_blank" rel="noopener"
+          >see the latest release on GitHub</a
+        >.
+      </p>
+    </footer>
+
+    <script src="download.js"></script>
   </body>
 </html>
