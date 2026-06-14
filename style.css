@@ -148,6 +148,26 @@ a:hover {
 }
 
 /* ---------------------------------- */
+/* SCREENSHOT */
+/* ---------------------------------- */
+
+.screenshot {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+
+.screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(40, 37, 30, 0.12);
+}
+
+/* ---------------------------------- */
 /* FEATURES */
 /* ---------------------------------- */
 
