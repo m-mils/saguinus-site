@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Releases — Saguinus</title>
+    <meta
+      name="description"
+      content="Download the latest version of Saguinus and see known issues."
+    />
+    <link rel="icon" href="assets/saguinus.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo-link" href="index.html">
+        <img src="assets/saguinus.png" alt="" />
+        Saguinus
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="releases.html" class="active">Releases</a>
+        <a href="sponsor.html">Sponsor</a>
+        <a href="https://github.com/m-mils/Saguinus" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <h1>Releases</h1>
+      <p>
+        Saguinus updates automatically once installed, but you can always
+        grab the latest version directly here.
+      </p>
+
+      <div class="card release-card">
+        <h2>Latest release</h2>
+        <p class="hero-meta" id="release-date"></p>
+        <a
+          id="download-btn"
+          class="download-btn"
+          href="https://github.com/m-mils/Saguinus/releases/latest"
+        >
+          Download for Windows
+        </a>
+        <p class="hero-meta" id="download-meta">Windows</p>
+      </div>
+
+      <div id="release-notes" class="release-notes"></div>
+
+      <p class="sponsor-cta">
+        <a
+          href="https://github.com/m-mils/Saguinus/releases"
+          target="_blank"
+          rel="noopener"
+          >View all releases on GitHub</a
+        >
+      </p>
+
+      <h2>Known issues</h2>
+      <p>
+        Saguinus is still in live testing, so a few rough edges remain. Here
+        is what's currently known and being worked on:
+      </p>
+      <ul>
+        <li>
+          Inline and block math don't yet show a visual highlight while
+          you're editing them — the math itself renders correctly, but it
+          can be hard to tell exactly where your cursor is inside the
+          formula.
+        </li>
+        <li>
+          Inserting a code block while text is selected replaces the
+          selection instead of moving it into the new code block — select
+          your text first, then re-add it to the code block manually after
+          inserting it.
+        </li>
+      </ul>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Saguinus is currently free during live testing —
+        <a href="releases.html">see the latest release</a> or
+        <a href="sponsor.html">become a sponsor</a>.
+      </p>
+    </footer>
+
+    <script src="releases.js"></script>
+  </body>
+</html>
