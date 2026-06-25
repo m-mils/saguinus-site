@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Installing Saguinus on Linux</title>
+    <meta
+      name="description"
+      content="How to install Saguinus on Linux via .deb or AppImage."
+    />
+    <link rel="icon" href="assets/saguinus.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo-link" href="index.html">
+        <img src="assets/saguinus.png" alt="" />
+        Saguinus
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="releases.html">Releases</a>
+        <a href="sponsor.html">Sponsor</a>
+        <a href="https://github.com/m-mils/Saguinus" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <h1>Installing Saguinus on Linux</h1>
+
+      <p>
+        There are two ways to get Saguinus on Linux: a <code>.deb</code>
+        package (recommended on Debian/Ubuntu-based distros — Ubuntu, Mint,
+        Pop!_OS, etc.) or a portable <code>.AppImage</code> (works on any
+        distro, no installation).
+      </p>
+
+      <h2>Option 1: .deb (recommended on Debian/Ubuntu-based distros)</h2>
+      <ul>
+        <li>
+          Download <code>Saguinus-X.Y.Z.deb</code> from the
+          <a href="https://github.com/m-mils/Saguinus/releases" target="_blank" rel="noopener">Releases page</a>.
+        </li>
+        <li>
+          Install it:
+          <pre><code>sudo dpkg -i Saguinus-X.Y.Z.deb</code></pre>
+          Many file managers can also install a <code>.deb</code> directly if
+          you double-click it instead — this varies by distro/desktop
+          environment.
+        </li>
+        <li>
+          Saguinus now appears in your application menu with its icon, and
+          <code>.md</code> files can be opened with it via right-click →
+          <strong>Open With</strong>.
+        </li>
+        <li>
+          <strong>To update:</strong> download the new <code>.deb</code> and
+          run the same <code>dpkg -i</code> command again — it replaces the
+          installed version in place.
+        </li>
+      </ul>
+
+      <h2>Option 2: AppImage (any distro, no installation)</h2>
+      <ul>
+        <li>
+          Download <code>Saguinus-X.Y.Z.AppImage</code> from the
+          <a href="https://github.com/m-mils/Saguinus/releases" target="_blank" rel="noopener">Releases page</a>.
+        </li>
+        <li>
+          Make it executable:
+          <pre><code>chmod +x Saguinus-X.Y.Z.AppImage</code></pre>
+          (or right-click → Properties → Permissions → "Allow executing as
+          program", on most file managers)
+        </li>
+        <li>
+          Double-click it, or run it from a terminal, to launch. Nothing is
+          installed system-wide — it's a single self-contained file.
+        </li>
+      </ul>
+
+      <p>
+        <strong>Note:</strong> a bare AppImage doesn't add an icon, app-menu
+        entry, or "Open With" registration on its own — that's normal
+        AppImage behavior on every distro, not a Saguinus-specific
+        limitation. If you want those, use the <code>.deb</code> instead.
+      </p>
+
+      <h2>A note on updates</h2>
+      <p>
+        Saguinus doesn't yet check for or install updates automatically on
+        Linux (it does on Windows). If a new version is available, the app
+        will show a notice linking back here — check the
+        <a href="https://github.com/m-mils/Saguinus/releases" target="_blank" rel="noopener">Releases page</a>
+        and reinstall using the steps above.
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Saguinus is currently free during live testing —
+        <a href="releases.html">see the latest release</a> or
+        <a href="sponsor.html">become a sponsor</a>.
+      </p>
+      <p>
+        Found a bug or something unclear?
+        <a href="https://www.reddit.com/r/Saguinus" target="_blank" rel="noopener">Post on r/Saguinus</a>.
+      </p>
+      <p><a href="terms.html">Terms of Use</a></p>
+    </footer>
+  </body>
+</html>

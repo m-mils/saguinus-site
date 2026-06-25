@@ -37,14 +37,50 @@
       <div class="card release-card">
         <h2>Latest release</h2>
         <p class="hero-meta" id="release-date"></p>
-        <a
-          id="download-btn"
-          class="download-btn"
-          href="https://github.com/m-mils/Saguinus/releases/latest"
-        >
-          Download for Windows
-        </a>
+
+        <div class="disclaimer-gate">
+          <p class="disclaimer-text">
+            Saguinus is still in active, live testing. It's provided as-is,
+            with no warranty of any kind — use it at your own risk, and
+            back up anything important. The developer isn't liable for data
+            loss, bugs, or any other issues that come from using this
+            software.
+          </p>
+          <label class="disclaimer-checkbox">
+            <input type="checkbox" id="agree-checkbox" />
+            I have read and agree to the
+            <a href="terms.html" target="_blank" rel="noopener">Terms of Use</a>
+          </label>
+        </div>
+
+        <div class="download-options">
+          <a
+            id="download-btn"
+            class="download-btn disabled"
+            href="https://github.com/m-mils/Saguinus/releases/latest"
+          >
+            Download for Windows
+          </a>
+          <a
+            id="download-btn-linux-appimage"
+            class="download-btn secondary disabled"
+            href="https://github.com/m-mils/Saguinus/releases/latest"
+          >
+            Linux (.AppImage)
+          </a>
+          <a
+            id="download-btn-linux-deb"
+            class="download-btn secondary disabled"
+            href="https://github.com/m-mils/Saguinus/releases/latest"
+          >
+            Linux (.deb)
+          </a>
+        </div>
         <p class="hero-meta" id="download-meta">Windows</p>
+        <p class="hero-note">
+          First time on Linux? See the
+          <a href="linux-install.html">install guide</a>.
+        </p>
       </div>
 
       <div id="release-notes" class="release-notes"></div>
@@ -65,16 +101,24 @@
       </p>
       <ul>
         <li>
-          Inline and block math don't yet show a visual highlight while
-          you're editing them — the math itself renders correctly, but it
-          can be hard to tell exactly where your cursor is inside the
-          formula.
+          PDF export's paper size is currently always A4, even if you choose
+          Letter or Legal in the Page menu — the live editor and on-screen
+          preview do follow your choice, but the exported PDF doesn't yet.
         </li>
         <li>
-          Inserting a code block while text is selected replaces the
-          selection instead of moving it into the new code block — select
-          your text first, then re-add it to the code block manually after
-          inserting it.
+          Switching the export preview to "Continuous" mode doesn't yet
+          produce a single unbroken PDF page — it currently exports the same
+          multi-page PDF as "Paged" mode.
+        </li>
+        <li>
+          Exported PDF pages can come out very slightly shorter than what
+          you see in the in-app preview — content isn't lost, just
+          occasionally shifted by a line or two near a page break.
+        </li>
+        <li>
+          On Linux, exporting to PDF currently crashes the app. This is a
+          confirmed bug in Electron itself (not Saguinus), and a fix is
+          pending upstream — Windows is unaffected.
         </li>
       </ul>
     </main>
@@ -85,6 +129,11 @@
         <a href="releases.html">see the latest release</a> or
         <a href="sponsor.html">become a sponsor</a>.
       </p>
+      <p>
+        Found a bug or something unclear?
+        <a href="https://www.reddit.com/r/Saguinus" target="_blank" rel="noopener">Post on r/Saguinus</a>.
+      </p>
+      <p><a href="terms.html">Terms of Use</a></p>
     </footer>
 
     <script src="releases.js"></script>

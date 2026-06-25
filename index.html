@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Saguinus — A document-shaped markdown editor</title>
+    <title>Saguinus — A markdown-powered document editor</title>
     <meta
       name="description"
-      content="Saguinus is a document-shaped markdown editor for Windows with live rendering, math, tables, task lists, and clean markdown round-tripping."
+      content="Saguinus is a markdown-powered document editor for Windows and Linux with live rendering, math, tables, task lists, and clean markdown round-tripping."
     />
     <link rel="icon" href="assets/saguinus.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
@@ -30,7 +30,7 @@
       <section class="hero">
         <img src="assets/saguinus.png" alt="Saguinus logo" />
         <h1>Saguinus</h1>
-        <p class="tagline">A clean, document-shaped markdown editor.</p>
+        <p class="tagline">A clean, markdown-powered document editor.</p>
         <p class="hero-desc">
           Write markdown the way it's meant to feel — a continuous page with
           no interrupting breaks, page guides that show where your document
@@ -38,14 +38,49 @@
           file underneath that stays clean no matter how much you copy, paste,
           and edit.
         </p>
-        <a
-          id="download-btn"
-          class="download-btn"
-          href="https://github.com/m-mils/Saguinus/releases/latest"
-        >
-          Download for Windows
-        </a>
+        <div class="disclaimer-gate">
+          <p class="disclaimer-text">
+            Saguinus is still in active, live testing. It's provided as-is,
+            with no warranty of any kind — use it at your own risk, and
+            back up anything important. The developer isn't liable for data
+            loss, bugs, or any other issues that come from using this
+            software.
+          </p>
+          <label class="disclaimer-checkbox">
+            <input type="checkbox" id="agree-checkbox" />
+            I have read and agree to the
+            <a href="terms.html" target="_blank" rel="noopener">Terms of Use</a>
+          </label>
+        </div>
+
+        <div class="download-options">
+          <a
+            id="download-btn"
+            class="download-btn disabled"
+            href="https://github.com/m-mils/Saguinus/releases/latest"
+          >
+            Download for Windows
+          </a>
+          <a
+            id="download-btn-linux-appimage"
+            class="download-btn secondary disabled"
+            href="https://github.com/m-mils/Saguinus/releases/latest"
+          >
+            Linux (.AppImage)
+          </a>
+          <a
+            id="download-btn-linux-deb"
+            class="download-btn secondary disabled"
+            href="https://github.com/m-mils/Saguinus/releases/latest"
+          >
+            Linux (.deb)
+          </a>
+        </div>
         <p class="hero-meta" id="download-meta">Windows</p>
+        <p class="hero-note">
+          First time on Linux? See the
+          <a href="linux-install.html">install guide</a>.
+        </p>
         <p class="hero-note">
           Free to use during live testing —
           <a href="sponsor.html">sponsorship</a> is welcome if it's solving
@@ -116,6 +151,11 @@
         <a href="releases.html">see the latest release</a> or
         <a href="sponsor.html">become a sponsor</a>.
       </p>
+      <p>
+        Found a bug or something unclear?
+        <a href="https://www.reddit.com/r/Saguinus" target="_blank" rel="noopener">Post on r/Saguinus</a>.
+      </p>
+      <p><a href="terms.html">Terms of Use</a></p>
     </footer>
 
     <script src="download.js"></script>

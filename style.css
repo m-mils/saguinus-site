@@ -148,6 +148,68 @@ a:hover {
 }
 
 /* ---------------------------------- */
+/* DISCLAIMER GATE */
+/* ---------------------------------- */
+
+.disclaimer-gate {
+  max-width: 480px;
+  margin: 0 auto 20px;
+  padding: 16px 18px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  text-align: left;
+}
+
+.disclaimer-text {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+.disclaimer-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.disclaimer-checkbox input {
+  margin-top: 2px;
+}
+
+/* ---------------------------------- */
+/* DOWNLOAD OPTIONS */
+/* ---------------------------------- */
+
+.download-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.download-btn.secondary {
+  background: var(--bg-alt);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  padding: 0.85rem 1.5rem;
+  font-size: 0.95rem;
+}
+
+.download-btn.secondary:hover {
+  background: var(--border);
+  color: var(--text-primary);
+}
+
+.download-btn.disabled {
+  opacity: 0.45;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+/* ---------------------------------- */
 /* SCREENSHOT */
 /* ---------------------------------- */
 
