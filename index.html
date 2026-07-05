@@ -6,7 +6,7 @@
     <title>Saguinus — A markdown-powered document editor</title>
     <meta
       name="description"
-      content="Saguinus is a markdown-powered document editor for Windows and Linux with live rendering, math, tables, task lists, and clean markdown round-tripping."
+      content="Saguinus is a markdown-powered document editor for Windows, macOS, and Linux with live rendering, math, tables, task lists, and clean markdown round-tripping."
     />
     <link rel="icon" href="assets/saguinus.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
@@ -38,49 +38,21 @@
           file underneath that stays clean no matter how much you copy, paste,
           and edit.
         </p>
-        <div class="disclaimer-gate">
-          <p class="disclaimer-text">
-            Saguinus is still in active, live testing. It's provided as-is,
-            with no warranty of any kind — use it at your own risk, and
-            back up anything important. The developer isn't liable for data
-            loss, bugs, or any other issues that come from using this
-            software.
-          </p>
-          <label class="disclaimer-checkbox">
-            <input type="checkbox" id="agree-checkbox" />
-            I have read and agree to the
-            <a href="terms.html" target="_blank" rel="noopener">Terms of Use</a>
-          </label>
-        </div>
-
         <div class="download-options">
-          <a
-            id="download-btn"
-            class="download-btn disabled"
-            href="https://github.com/m-mils/Saguinus/releases/latest"
-          >
+          <a class="download-btn" href="install.html?p=win">
             Download for Windows
           </a>
-          <a
-            id="download-btn-linux-appimage"
-            class="download-btn secondary disabled"
-            href="https://github.com/m-mils/Saguinus/releases/latest"
-          >
+          <a class="download-btn secondary" href="install.html?p=mac">
+            Download for macOS
+          </a>
+          <a class="download-btn secondary" href="install.html?p=appimage">
             Linux (.AppImage)
           </a>
-          <a
-            id="download-btn-linux-deb"
-            class="download-btn secondary disabled"
-            href="https://github.com/m-mils/Saguinus/releases/latest"
-          >
+          <a class="download-btn secondary" href="install.html?p=deb">
             Linux (.deb)
           </a>
         </div>
-        <p class="hero-meta" id="download-meta">Windows</p>
-        <p class="hero-note">
-          First time on Linux? See the
-          <a href="linux-install.html">install guide</a>.
-        </p>
+        <p class="hero-note">Each button walks you through first-time setup for your platform.</p>
         <p class="hero-note">
           Free to use during live testing —
           <a href="sponsor.html">sponsorship</a> is welcome if it's solving
@@ -158,6 +130,5 @@
       <p><a href="terms.html">Terms of Use</a></p>
     </footer>
 
-    <script src="download.js"></script>
   </body>
 </html>

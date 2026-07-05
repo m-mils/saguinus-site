@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Install Saguinus</title>
+    <meta
+      name="description"
+      content="How to download and run Saguinus on Windows, macOS, and Linux."
+    />
+    <link rel="icon" href="assets/saguinus.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo-link" href="index.html">
+        <img src="assets/saguinus.png" alt="" />
+        Saguinus
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="releases.html">Releases</a>
+        <a href="sponsor.html">Sponsor</a>
+        <a href="https://github.com/m-mils/Saguinus" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <p class="back-link"><a href="index.html">← Back</a></p>
+
+      <!-- Windows -->
+      <div id="section-win" hidden>
+        <h1>Getting started on Windows</h1>
+        <div class="install-callout">
+          <strong>Heads up:</strong> Because Saguinus is not signed with a commercial
+          certificate, Microsoft Edge may warn you when downloading and Windows Defender
+          SmartScreen may flag the installer. The steps below show how to get past these
+          warnings.
+        </div>
+        <ol>
+          <li>Click the download button below.</li>
+          <li>
+            If Edge shows a warning, click the <strong>…</strong> menu next to the file
+            name in the download bar and choose <strong>Keep</strong>, then
+            <strong>Keep anyway</strong>.
+          </li>
+          <li>
+            Run the installer. If Windows Defender SmartScreen appears, click
+            <strong>More info</strong>, then <strong>Run anyway</strong>.
+          </li>
+        </ol>
+        <div class="disclaimer-gate">
+          <p class="disclaimer-text">
+            Saguinus is still in active, live testing. It's provided as-is,
+            with no warranty of any kind — use it at your own risk, and back up
+            anything important. The developer isn't liable for data loss, bugs,
+            or any other issues that come from using this software.
+          </p>
+          <label class="disclaimer-checkbox">
+            <input type="checkbox" class="agree-check" />
+            I have read and agree to the
+            <a href="terms.html" target="_blank" rel="noopener">Terms of Use</a>
+          </label>
+        </div>
+        <div class="install-download">
+          <a
+            id="dl-btn-win"
+            class="download-btn disabled"
+            href="https://github.com/m-mils/Saguinus/releases/latest"
+          >
+            Download for Windows (.exe)
+          </a>
+          <p id="dl-meta-win" class="hero-meta"></p>
+        </div>
+      </div>
+
+      <!-- macOS -->
+      <div id="section-mac" hidden>
+        <h1>Getting started on macOS</h1>
+        <div class="install-callout">
+          <strong>Heads up:</strong> macOS Gatekeeper blocks apps that are not notarised
+          by Apple. You will need to approve Saguinus once on first launch — after that
+          it opens normally.
+        </div>
+        <ol>
+          <li>Click the download button below.</li>
+          <li>
+            Open the <code>.dmg</code> file and drag <strong>Saguinus</strong> into
+            your <strong>Applications</strong> folder.
+          </li>
+          <li>
+            In Applications, <strong>right-click</strong> Saguinus and choose
+            <strong>Open</strong>. Do not double-click it yet.
+          </li>
+          <li>
+            A dialog will warn about an unidentified developer — click
+            <strong>Open</strong>.
+          </li>
+          <li>
+            If macOS asks for your password, enter it and click <strong>Allow</strong>.
+          </li>
+          <li>
+            Saguinus is now approved on your Mac. You can open it normally by
+            double-clicking from now on.
+          </li>
+        </ol>
+        <div class="disclaimer-gate">
+          <p class="disclaimer-text">
+            Saguinus is still in active, live testing. It's provided as-is,
+            with no warranty of any kind — use it at your own risk, and back up
+            anything important. The developer isn't liable for data loss, bugs,
+            or any other issues that come from using this software.
+          </p>
+          <label class="disclaimer-checkbox">
+            <input type="checkbox" class="agree-check" />
+            I have read and agree to the
+            <a href="terms.html" target="_blank" rel="noopener">Terms of Use</a>
+          </label>
+        </div>
+        <div class="install-download">
+          <a
+            id="dl-btn-mac"
+            class="download-btn disabled"
+            href="https://github.com/m-mils/Saguinus/releases/latest"
+          >
+            Download for macOS (.dmg)
+          </a>
+          <p id="dl-meta-mac" class="hero-meta"></p>
+        </div>
+      </div>
+
+      <!-- Linux AppImage -->
+      <div id="section-appimage" hidden>
+        <h1>Getting started on Linux (AppImage)</h1>
+        <ol>
+          <li>Click the download button below.</li>
+          <li>
+            Open a terminal in the folder where you saved the file, then make it
+            executable and run it:
+            <pre><code>chmod +x Saguinus-<span class="version-num">X.Y.Z</span>.AppImage
+./Saguinus-<span class="version-num">X.Y.Z</span>.AppImage</code></pre>
+            Alternatively, right-click the file → <strong>Properties</strong> →
+            <strong>Permissions</strong> → tick <strong>Allow executing as program</strong>,
+            then double-click it.
+          </li>
+        </ol>
+        <p>
+          The AppImage installs nothing system-wide and won't add an entry to your app
+          menu. If you want those, use the
+          <a href="install.html?p=deb">.deb package</a> instead.
+        </p>
+        <div class="disclaimer-gate">
+          <p class="disclaimer-text">
+            Saguinus is still in active, live testing. It's provided as-is,
+            with no warranty of any kind — use it at your own risk, and back up
+            anything important. The developer isn't liable for data loss, bugs,
+            or any other issues that come from using this software.
+          </p>
+          <label class="disclaimer-checkbox">
+            <input type="checkbox" class="agree-check" />
+            I have read and agree to the
+            <a href="terms.html" target="_blank" rel="noopener">Terms of Use</a>
+          </label>
+        </div>
+        <div class="install-download">
+          <a
+            id="dl-btn-appimage"
+            class="download-btn disabled"
+            href="https://github.com/m-mils/Saguinus/releases/latest"
+          >
+            Download Linux AppImage
+          </a>
+          <p id="dl-meta-appimage" class="hero-meta"></p>
+        </div>
+      </div>
+
+      <!-- Linux .deb -->
+      <div id="section-deb" hidden>
+        <h1>Getting started on Linux (.deb)</h1>
+        <p>
+          Recommended for Debian, Ubuntu, Linux Mint, Pop!_OS, and other Debian-based
+          systems.
+        </p>
+        <ol>
+          <li>Click the download button below.</li>
+          <li>
+            Install the package:
+            <pre><code>sudo dpkg -i Saguinus-<span class="version-num">X.Y.Z</span>.deb</code></pre>
+            On Ubuntu, Mint, and similar, you can also double-click the <code>.deb</code>
+            in your file manager to install it directly.
+          </li>
+          <li>
+            Saguinus will appear in your application menu.
+            <code>.md</code> files can be opened with it via right-click →
+            <strong>Open With</strong>.
+          </li>
+        </ol>
+        <p>
+          <strong>To update:</strong> download the new <code>.deb</code> and run the
+          same <code>dpkg -i</code> command — it replaces the installed version in place.
+        </p>
+        <div class="disclaimer-gate">
+          <p class="disclaimer-text">
+            Saguinus is still in active, live testing. It's provided as-is,
+            with no warranty of any kind — use it at your own risk, and back up
+            anything important. The developer isn't liable for data loss, bugs,
+            or any other issues that come from using this software.
+          </p>
+          <label class="disclaimer-checkbox">
+            <input type="checkbox" class="agree-check" />
+            I have read and agree to the
+            <a href="terms.html" target="_blank" rel="noopener">Terms of Use</a>
+          </label>
+        </div>
+        <div class="install-download">
+          <a
+            id="dl-btn-deb"
+            class="download-btn disabled"
+            href="https://github.com/m-mils/Saguinus/releases/latest"
+          >
+            Download Linux .deb
+          </a>
+          <p id="dl-meta-deb" class="hero-meta"></p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Saguinus is currently free during live testing —
+        <a href="releases.html">see the latest release</a> or
+        <a href="sponsor.html">become a sponsor</a>.
+      </p>
+      <p>
+        Found a bug or something unclear?
+        <a href="https://www.reddit.com/r/Saguinus" target="_blank" rel="noopener">Post on r/Saguinus</a>.
+      </p>
+      <p><a href="terms.html">Terms of Use</a></p>
+    </footer>
+
+    <script src="install.js"></script>
+  </body>
+</html>
