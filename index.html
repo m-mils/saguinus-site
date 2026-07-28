@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Saguinus — A markdown-powered document editor</title>
+    <title>Saguinus — Write in markdown. Get a clean PDF.</title>
     <meta
       name="description"
-      content="Saguinus is a markdown-powered document editor for Windows, macOS, and Linux with live rendering, math, tables, task lists, and clean markdown round-tripping."
+      content="Saguinus is a markdown-powered document editor for Windows, macOS, and Linux. Write in a live canvas with page guides, export a PDF that matches exactly what you see in the editor."
     />
     <link rel="icon" href="assets/saguinus.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
@@ -19,6 +19,7 @@
       </a>
       <nav class="site-nav">
         <a href="index.html" class="active">Home</a>
+        <a href="features.html">Features</a>
         <a href="about.html">About</a>
         <a href="releases.html">Releases</a>
         <a href="sponsor.html">Sponsor</a>
@@ -28,15 +29,14 @@
 
     <main>
       <section class="hero">
-        <img src="assets/saguinus_full.png" alt="Saguinus logo" />
         <h1>Saguinus</h1>
-        <p class="tagline">A clean, markdown-powered document editor.</p>
+        <p class="tagline">Write in markdown. Get a clean PDF.</p>
         <p class="hero-desc">
-          Write markdown the way it's meant to feel — a continuous page with
-          no interrupting breaks, page guides that show where your document
-          will split on export, live formatting as you type, and a plain-text
-          file underneath that stays clean no matter how much you copy, paste,
-          and edit.
+          A document editor built around the output. Write in a continuous
+          canvas with live markdown rendering and page guides that show
+          exactly where each page will break — then export, and the layout
+          you see is the layout on the page. No vaults, no databases, no
+          mandatory project structure.
         </p>
         <div class="download-options">
           <a class="download-btn" href="install.html?p=win">
@@ -61,60 +61,315 @@
       </section>
 
       <section class="screenshot">
-        <img
-          src="assets/Welcome to Saguinus.png"
-          alt="Saguinus editor showing a document with a table and live-rendered KaTeX math"
-          width="1269"
-          height="1138"
-          loading="lazy"
-        />
+        <div class="hero-win-wrap">
+        <div class="win-scaler">
+          <div class="aw" id="aw">
+
+            <!-- Title bar -->
+            <div class="aw-frame">
+              <div class="aw-left">
+                <div class="aw-tls">
+                  <div class="aw-tl r"></div>
+                  <div class="aw-tl y"></div>
+                  <div class="aw-tl g"></div>
+                </div>
+                <div class="aw-logo">
+                  <img src="assets/saguinus.png" alt="" />
+                </div>
+                <div class="aw-hbtn">
+                  <svg viewBox="0 0 24 24"><polyline points="9 14 4 9 9 4"/><path d="M20 20v-7a4 4 0 0 0-4-4H4"/></svg>
+                </div>
+                <div class="aw-hbtn">
+                  <svg viewBox="0 0 24 24"><polyline points="15 14 20 9 15 4"/><path d="M4 20v-7a4 4 0 0 1 4-4h12"/></svg>
+                </div>
+              </div>
+              <div class="aw-title"><span>project-notes.md</span></div>
+            </div>
+
+            <!-- Menu row -->
+            <div class="aw-menu">
+              <button class="aw-tab">File</button>
+              <button class="aw-tab active">Home</button>
+              <button class="aw-tab">Insert</button>
+              <button class="aw-tab">View</button>
+              <button class="aw-tab">Page</button>
+              <button class="aw-tab">Preferences</button>
+              <div class="aw-menu-end">
+                <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+              </div>
+            </div>
+
+            <!-- Workspace -->
+            <div class="aw-workspace">
+
+              <!-- Activity bar -->
+              <aside class="aw-actbar">
+                <div class="aw-abt" title="Open Folder">
+                  <svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                </div>
+                <div class="aw-abt active" title="Document Outline">
+                  <svg viewBox="0 0 24 24">
+                    <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
+                    <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
+                  </svg>
+                </div>
+                <div class="aw-abt" title="Quick Notes">
+                  <svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                </div>
+                <div class="aw-abt" title="Help">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                </div>
+              </aside>
+
+              <!-- Editor -->
+              <div class="aw-vport">
+                <div class="aw-page">
+                  <h1>Project Notes</h1>
+                  <p>A running log of ideas, tasks, and references. Started as a Quick Note — expanded here.</p>
+
+                  <div class="aw-h2">Overview</div>
+                  <p>Build a lightweight pipeline that ingests sensor readings, normalises them, and writes a summary report every hour — formatted and ready to hand in.</p>
+
+                  <div class="aw-h2">Tasks</div>
+                  <div class="aw-task"><span class="aw-chk done"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,8 8.5,2"/></svg></span><span>Set up repo and folder structure</span></div>
+                  <div class="aw-task"><span class="aw-chk done"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,8 8.5,2"/></svg></span><span>Write ingestion module — CSV and JSON sources</span></div>
+                  <div class="aw-task"><span class="aw-chk"></span><span>Normalisation pass — handle missing values</span></div>
+                  <div class="aw-task"><span class="aw-chk"></span><span>Hourly report template</span></div>
+                  <div class="aw-task"><span class="aw-chk"></span><span>Submit draft by <strong style="color:#f5f5f5">Friday 17:00</strong></span></div>
+
+                  <div class="aw-h2">Key formula</div>
+                  <div class="aw-code"><span class="aw-cm"># normalise a value to [0, 1]</span>
+<span class="aw-fn">def</span> normalise(x, lo, hi):
+    <span class="aw-kw">return</span> (x <span class="aw-op">-</span> lo) <span class="aw-op">/</span> (hi <span class="aw-op">-</span> lo)</div>
+
+                  <div class="aw-h2">References</div>
+                  <p>Lecture 4 slides — streaming normalisation.<br>
+                  See also: <span class="aw-link">pandas.DataFrame.interpolate</span> for gap filling.</p>
+
+                  <div class="aw-pagebreak">Page Break</div>
+                </div>
+              </div>
+
+            </div><!-- /workspace -->
+          </div><!-- /aw -->
+        </div><!-- /win-scaler -->
+        </div><!-- /hero-win-wrap -->
       </section>
 
-      <section class="features">
-        <div class="feature">
-          <h3>Page guides, not page breaks</h3>
-          <p>
-            Write in one continuous flow with no interruptions — subtle page
-            guides show exactly where pages will fall, so what you see lines
-            up with what you get when you export to PDF.
-          </p>
+      <!-- HOW IT WORKS -->
+      <section class="how-it-works">
+        <h2>How it works</h2>
+        <div class="steps">
+
+          <!-- Step 1: Write -->
+          <div class="step">
+            <div class="step-win">
+              <div class="step-win-chrome">
+                <div class="s-tl r"></div><div class="s-tl y"></div><div class="s-tl g"></div>
+                <span class="step-win-chrome-title">report.md</span>
+              </div>
+              <div class="step-win-body" style="padding:0;justify-content:flex-start">
+                <!-- Single continuous page — guide marks bleed into padding margin -->
+                <div style="background:#242424;padding:12px 14px 10px;font-family:Calibri,'Segoe UI',sans-serif">
+                  <div style="font-size:12px;font-weight:700;color:#f5f5f5;margin-bottom:4px">Q3 Analysis Report</div>
+                  <div style="font-size:8.5px;font-weight:700;color:#da892a;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:3px">Introduction</div>
+                  <div style="font-size:8.5px;color:#b0b0b0;line-height:1.45">The purpose of this report is to evaluate outcomes across all three test conditions during Q3...</div>
+                  <!-- guide: bleeds past 14px content padding to page edge on each side -->
+                  <div style="margin:6px -14px;height:8px;display:flex;align-items:center">
+                    <div style="width:14px;height:1px;background:rgba(155,155,155,0.28);flex-shrink:0"></div>
+                    <div style="flex:1"></div>
+                    <div style="width:14px;height:1px;background:rgba(155,155,155,0.28);flex-shrink:0"></div>
+                  </div>
+                  <div style="font-size:8.5px;font-weight:700;color:#f5f5f5;opacity:0.45">Methodology</div>
+                </div>
+              </div>
+            </div>
+            <div class="step-label">1 — Write</div>
+            <h3>A canvas that knows its pages</h3>
+            <p>Write in a continuous canvas with live markdown rendering. Subtle page guides mark exactly where each page will break on export — no surprises on print day.</p>
+          </div>
+
+          <!-- Step 2: Structure -->
+          <div class="step">
+            <div class="step-win">
+              <div class="step-win-chrome">
+                <div class="s-tl r"></div><div class="s-tl y"></div><div class="s-tl g"></div>
+                <span class="step-win-chrome-title">report.md</span>
+              </div>
+              <div class="step-win-body" style="padding:0">
+                <!-- Doc page (#242424) on canvas (#171717) -->
+                <div style="background:#242424;padding:12px 14px;font-family:Calibri,'Segoe UI',sans-serif;width:100%">
+                  <div style="font-size:8px;font-weight:700;color:#9d9d9d;letter-spacing:0.07em;text-transform:uppercase;margin-bottom:6px">Table of Contents</div>
+                  <div style="display:flex;align-items:baseline;margin-bottom:3px">
+                    <span style="font-size:9px;color:#d0d0d0;flex-shrink:0">Introduction</span>
+                    <span style="flex:1;border-bottom:1px dotted #4a4a4a;margin:0 4px 2px"></span>
+                    <span style="font-size:9px;color:#9d9d9d;flex-shrink:0">1</span>
+                  </div>
+                  <div style="display:flex;align-items:baseline;margin-bottom:3px">
+                    <span style="font-size:9px;color:#d0d0d0;flex-shrink:0">Methodology</span>
+                    <span style="flex:1;border-bottom:1px dotted #4a4a4a;margin:0 4px 2px"></span>
+                    <span style="font-size:9px;color:#9d9d9d;flex-shrink:0">3</span>
+                  </div>
+                  <div style="display:flex;align-items:baseline;margin-bottom:8px">
+                    <span style="font-size:9px;color:#d0d0d0;flex-shrink:0">Results</span>
+                    <span style="flex:1;border-bottom:1px dotted #4a4a4a;margin:0 4px 2px"></span>
+                    <span style="font-size:9px;color:#9d9d9d;flex-shrink:0">7</span>
+                  </div>
+                  <div style="border-top:1px solid #2f2f2f;padding-top:7px;font-size:11px;font-weight:700;color:#f5f5f5">Introduction</div>
+                  <div style="font-size:8.5px;color:#b0b0b0;margin-top:3px;line-height:1.4">The Q3 period showed a marked improvement across all test conditions...</div>
+                </div>
+              </div>
+            </div>
+            <div class="step-label">2 — Structure</div>
+            <h3>Add everything the document needs</h3>
+            <p>Insert a table of contents with real page numbers, headings, tables, footnotes, equations, images. The document builds around your content.</p>
+          </div>
+
+          <!-- Step 3: Export -->
+          <div class="step">
+            <div class="step-win">
+              <!-- PDF viewer chrome instead of Saguinus app chrome -->
+              <div class="step-win-chrome" style="background:#3d3d3d;border-bottom-color:#2a2a2a">
+                <span style="font-size:9.5px;color:#c8c8c8;font-family:'Segoe UI',sans-serif;flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis">Q3 Analysis Report.pdf</span>
+                <span style="font-size:9px;color:#999;font-family:'Segoe UI',sans-serif;white-space:nowrap;margin-left:8px">1 / 4 &nbsp;·&nbsp; 100%</span>
+              </div>
+              <div class="step-win-body" style="background:#525659;align-items:center">
+                <div style="background:#fff;width:76%;border-radius:1px;padding:12px;box-shadow:0 2px 14px rgba(0,0,0,0.55)">
+                  <div style="font-size:11px;font-weight:700;color:#1a1a1a;text-align:center;margin-bottom:5px;font-family:'Segoe UI',sans-serif">Q3 Analysis Report</div>
+                  <div style="font-size:8px;color:#555;line-height:1.5;font-family:'Segoe UI',sans-serif;margin-bottom:8px">The Q3 period showed a marked improvement across all test conditions, with Method A outperforming the baseline...</div>
+                  <div style="display:flex;justify-content:space-between;border-top:0.5px solid #e0e0e0;padding-top:4px">
+                    <span style="font-size:7px;color:#aaa;font-family:'Segoe UI',sans-serif">Q3 Analysis Report</span>
+                    <span style="font-size:7px;color:#aaa;font-family:'Segoe UI',sans-serif">1</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step-label">3 — Export</div>
+            <h3>One click to a print-ready PDF</h3>
+            <p>Export and the layout you see in the editor is the layout in the PDF. Page breaks, alignment, TOC page numbers, headers and footers — all carried through exactly.</p>
+          </div>
+
         </div>
-        <div class="feature">
-          <h3>Live rich rendering</h3>
-          <p>
-            Headings, bold, italics, strikethrough, links, and images render
-            as you type, while the file underneath stays plain markdown.
-          </p>
+
+        <div class="qn-showcase">
+
+          <div class="qn-showcase-caption">
+            <h3>Quick Note (Alt+N)</h3>
+            <p>Press <strong>Alt+N</strong> from anywhere on your desktop — even while another app has focus — to open a floating notepad over whatever you're doing. Jot it down, then open it in the editor when you're ready.</p>
+          </div>
+
+          <div class="qn-browser-scene">
+
+            <!-- macOS browser chrome -->
+            <div class="qn-browser-chrome">
+              <div class="qn-br-tl" style="background:#ff5f57"></div>
+              <div class="qn-br-tl" style="background:#febc2e"></div>
+              <div class="qn-br-tl" style="background:#28c840"></div>
+              <div class="qn-br-url">vide.io/watch?v=nn-backprop-pt3</div>
+            </div>
+
+            <!-- Vide site header -->
+            <div style="background:#fff;border-bottom:1px solid #e8e8e8;height:40px;display:flex;align-items:center;padding:0 14px;gap:10px;flex-shrink:0">
+              <span style="font-size:14px;font-weight:800;color:#d04010;font-family:'Segoe UI',sans-serif;letter-spacing:-0.5px">vide</span>
+              <div style="flex:1;background:#f4f4f4;border:1px solid #ddd;border-radius:18px;height:24px;display:flex;align-items:center;padding:0 11px;max-width:260px">
+                <span style="font-size:10.5px;color:#bbb;font-family:'Segoe UI',sans-serif">Search</span>
+              </div>
+              <div style="margin-left:auto;font-size:10px;font-weight:600;color:#1a73e8;border:1.5px solid #1a73e8;border-radius:3px;padding:2px 9px;font-family:'Segoe UI',sans-serif">Sign in</div>
+            </div>
+
+            <!-- Site body: video + sidebar -->
+            <div style="display:flex;background:#f9f9f9">
+
+              <!-- Main video column -->
+              <div style="flex:1;padding:12px 10px;min-width:0">
+
+                <!-- Video player — paused on a slide presenting Saguinus as the answer -->
+                <div style="background:#111;border-radius:5px;aspect-ratio:16/9;position:relative;overflow:hidden">
+                  <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:5% 7%">
+                    <div style="background:#fff;border-radius:3px;width:100%;height:100%;padding:7% 9%;box-shadow:0 6px 28px rgba(0,0,0,0.7);position:relative;display:flex;flex-direction:column;justify-content:center">
+                      <div style="position:absolute;top:0;left:0;right:0;height:4px;background:#da892a;border-radius:3px 3px 0 0"></div>
+                      <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px">
+                        <img src="assets/saguinus.png" alt="" style="width:18px;height:18px;border-radius:4px">
+                        <div style="font-size:14px;font-weight:800;color:#111;font-family:'Segoe UI',sans-serif;letter-spacing:-0.03em">Saguinus</div>
+                      </div>
+                      <div style="font-size:9px;color:#444;font-family:'Segoe UI',sans-serif;line-height:1.5;margin-bottom:7px">A markdown editor built for<br>printed documents and reports</div>
+                      <div style="font-size:8px;color:#da892a;font-weight:700;font-family:'Segoe UI',sans-serif;letter-spacing:0.01em">→ saguinus.app</div>
+                    </div>
+                  </div>
+                  <div style="position:absolute;bottom:0;left:0;right:0;height:3px;background:rgba(255,255,255,0.15)">
+                    <div style="width:55%;height:100%;background:#d04010"></div>
+                  </div>
+                  <div style="position:absolute;bottom:5px;right:7px;font-size:8.5px;color:#fff;font-family:monospace;background:rgba(0,0,0,0.55);padding:1px 4px;border-radius:2px">8:34 / 15:22</div>
+                </div>
+
+                <!-- Video info -->
+                <div style="padding-top:8px">
+                  <div style="font-size:11.5px;font-weight:700;color:#111;font-family:'Segoe UI',sans-serif;line-height:1.3;margin-bottom:3px">Is there a markdown editor designed for reports and printed documents?</div>
+                  <div style="font-size:10px;color:#777;font-family:'Segoe UI',sans-serif;margin-bottom:6px">Dev Roundup · 31K views · 3 days ago</div>
+                  <div style="display:flex;gap:6px;flex-wrap:wrap">
+                    <div style="font-size:9.5px;color:#444;font-family:'Segoe UI',sans-serif;border:1px solid #ddd;border-radius:14px;padding:1px 9px;background:#f5f5f5">👍 Like</div>
+                    <div style="font-size:9.5px;color:#444;font-family:'Segoe UI',sans-serif;border:1px solid #ddd;border-radius:14px;padding:1px 9px;background:#f5f5f5">Share</div>
+                    <div style="font-size:9.5px;color:#444;font-family:'Segoe UI',sans-serif;border:1px solid #ddd;border-radius:14px;padding:1px 9px;background:#f5f5f5">+ Save</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Sidebar: Up Next -->
+              <div class="qn-video-sidebar">
+                <div style="font-size:9.5px;font-weight:700;color:#111;font-family:'Segoe UI',sans-serif;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.05em">Up Next</div>
+
+                <div style="display:flex;gap:6px;margin-bottom:8px">
+                  <div style="width:64px;height:38px;background:linear-gradient(135deg,#162440,#0a1530);border-radius:3px;flex-shrink:0;display:flex;align-items:center;justify-content:center">
+                    <svg viewBox="0 0 24 24" width="9" fill="#fff" opacity="0.55" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
+                  </div>
+                  <div style="min-width:0">
+                    <div style="font-size:9.5px;font-weight:600;color:#111;font-family:'Segoe UI',sans-serif;line-height:1.3;margin-bottom:2px">Best markdown tools for technical documentation</div>
+                    <div style="font-size:9px;color:#888;font-family:'Segoe UI',sans-serif">WriteStack · 18K views</div>
+                  </div>
+                </div>
+
+                <div style="display:flex;gap:6px">
+                  <div style="width:64px;height:38px;background:linear-gradient(135deg,#28142a,#180f1e);border-radius:3px;flex-shrink:0;display:flex;align-items:center;justify-content:center">
+                    <svg viewBox="0 0 24 24" width="9" fill="#fff" opacity="0.55" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
+                  </div>
+                  <div style="min-width:0">
+                    <div style="font-size:9.5px;font-weight:600;color:#111;font-family:'Segoe UI',sans-serif;line-height:1.3;margin-bottom:2px">Markdown to PDF — full workflow comparison</div>
+                    <div style="font-size:9px;color:#888;font-family:'Segoe UI',sans-serif">Code &amp; Docs · 54K views</div>
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- /site body -->
+
+            <!-- Floating Quick Note window -->
+            <div class="qn-vid-float">
+              <div class="qn-vid-float-bar">
+                <div class="qn-vid-float-tl" style="background:#ff5f57"></div>
+                <div class="qn-vid-float-tl" style="background:#febc2e"></div>
+                <div class="qn-vid-float-tl" style="background:#28c840"></div>
+                <span class="qn-vid-float-title">Quick Note</span>
+              </div>
+              <div class="qn-vid-float-body">
+                <div style="font-size:9.5px;color:#555;margin-bottom:5px;font-family:-apple-system,'Segoe UI',sans-serif">2026-07-28 11:04</div>
+                <div style="font-size:11px;color:#c8c8c8;line-height:1.65;font-family:-apple-system,'Segoe UI',sans-serif">
+                  — Saguinus is exactly this<br>
+                  — document-focused markdown editor<br>
+                  — exports a clean PDF<br>
+                  — saguinus.app (free)
+                </div>
+                <div style="margin-top:9px;background:#da892a;color:#fff;font-size:9.5px;font-weight:700;padding:3px 10px;border-radius:4px;display:inline-block">Open in Editor ↗</div>
+              </div>
+            </div>
+
+          </div><!-- /qn-browser-scene -->
+
+        </div><!-- /qn-showcase -->
+        <div class="features-cta">
+          <a href="features.html">See all features →</a>
         </div>
-        <div class="feature">
-          <h3>Math with KaTeX</h3>
-          <p>
-            Write inline and block math using familiar LaTeX syntax, with
-            editable source and dedicated toolbar buttons.
-          </p>
-        </div>
-        <div class="feature">
-          <h3>Tables &amp; task lists</h3>
-          <p>
-            Build tables and checkbox task lists that render cleanly and
-            round-trip back to markdown without losing structure.
-          </p>
-        </div>
-        <div class="feature">
-          <h3>Code blocks</h3>
-          <p>
-            Syntax-highlighted code blocks for sharing snippets, configs, and
-            examples alongside your writing.
-          </p>
-        </div>
-        <div class="feature">
-          <h3>Built-in markdown guide</h3>
-          <p>
-            A quick-reference "Markdown Guide" panel covers every supported
-            construct, right inside the app — handy for newcomers.
-          </p>
-        </div>
+
       </section>
+
     </main>
 
     <footer class="site-footer">
@@ -130,5 +385,20 @@
       <p><a href="terms.html">Terms of Use</a></p>
     </footer>
 
+    <script>
+      (function () {
+        var win = document.getElementById('aw');
+        var scaler = win.parentElement;
+        function scale() {
+          win.style.transform = 'scale(' + scaler.clientWidth / 900 + ')';
+        }
+        if (window.ResizeObserver) {
+          new ResizeObserver(scale).observe(scaler);
+        } else {
+          window.addEventListener('resize', scale);
+        }
+        scale();
+      })();
+    </script>
   </body>
 </html>

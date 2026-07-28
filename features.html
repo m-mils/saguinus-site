@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saguinus — Features</title>
+    <meta
+      name="description"
+      content="Every feature in Saguinus: live markdown rendering, page guides, table of contents with real page numbers, KaTeX math, footnotes, PDF export with bookmarks, headers and footers, and more."
+    />
+    <link rel="icon" href="assets/saguinus.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo-link" href="index.html">
+        <img src="assets/saguinus_full.png" alt="" />
+        Saguinus
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="features.html" class="active">Features</a>
+        <a href="about.html">About</a>
+        <a href="releases.html">Releases</a>
+        <a href="sponsor.html">Sponsor</a>
+        <a href="https://github.com/m-mils/Saguinus" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="features-section">
+        <h2>Features</h2>
+        <p class="features-intro">Everything Saguinus can do, grouped by where it fits in your workflow.</p>
+
+        <!-- Capture -->
+        <div class="feature-group">
+          <div class="feature-group-hdr">Capture</div>
+          <div class="feature-grid">
+
+            <div class="feat-card">
+              <div class="feat-win">
+                <div class="feat-win-chrome"><div class="ftl r"></div><div class="ftl y"></div><div class="ftl g"></div></div>
+                <div class="feat-win-body">
+                  <div class="feat-page">
+                    <div style="display:flex;align-items:center;justify-content:center;margin-bottom:10px">
+                      <div style="background:#1c1c1c;border-radius:8px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,0.6);width:150px">
+                        <div style="background:#141414;height:22px;display:flex;align-items:center;padding:0 8px;gap:4px;border-bottom:1px solid #2f2f2f">
+                          <span style="width:7px;height:7px;border-radius:50%;background:#ff5f57;flex-shrink:0"></span>
+                          <span style="width:7px;height:7px;border-radius:50%;background:#febc2e;flex-shrink:0"></span>
+                          <span style="width:7px;height:7px;border-radius:50%;background:#28c840;flex-shrink:0"></span>
+                          <span style="font-size:9px;color:#888;margin:0 auto;font-family:'Segoe UI',sans-serif">Quick Note</span>
+                        </div>
+                        <div style="padding:8px 10px">
+                          <div style="font-size:8px;color:#555;margin-bottom:4px;font-family:'Segoe UI',sans-serif">2026-07-24 09:41</div>
+                          <div style="font-size:9.5px;color:#d0d0d0;line-height:1.4;font-family:'Segoe UI',sans-serif">Check variance on validation set before 3pm</div>
+                          <div style="margin-top:7px;background:#da892a;color:#fff;font-size:7.5px;font-weight:700;padding:2px 8px;border-radius:3px;display:inline-block">Open in Editor ↗</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="feat-sep"></div>
+                    <div class="feat-title">Quick Note (Alt+N)</div>
+                    <div class="feat-desc">A floating notepad that opens instantly from anywhere on your desktop — even while another app has focus. Hides rather than closes, so the next press is immediate. Auto-saves continuously.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="feat-card">
+              <div class="feat-win">
+                <div class="feat-win-chrome"><div class="ftl r"></div><div class="ftl y"></div><div class="ftl g"></div></div>
+                <div class="feat-win-body">
+                  <div class="feat-page">
+                    <div style="font-size:9.5px;color:#b0b0b0;margin-bottom:4px">Meeting notes —</div>
+                    <div style="font-size:9.5px;color:#b0b0b0;margin-bottom:8px">Started at <span style="color:#79c0ff;font-family:Consolas,'Courier New',monospace">2026-07-24 14:32:07</span></div>
+                    <div style="border-top:1px solid #2f2f2f;padding-top:7px;margin-bottom:2px">
+                      <div style="font-size:8.5px;color:#5a5a5a;font-family:Consolas,monospace">--now → full timestamp</div>
+                      <div style="font-size:8.5px;color:#5a5a5a;font-family:Consolas,monospace;margin-top:2px">--date · --time</div>
+                    </div>
+                    <div class="feat-sep"></div>
+                    <div class="feat-title">Timestamp shortcuts</div>
+                    <div class="feat-desc">Type <code>--now</code> for a full date-and-time stamp, <code>--date</code> for today's date, <code>--time</code> for the time. Each is replaced the moment you finish typing.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="feat-card">
+              <div class="feat-win">
+                <div class="feat-win-chrome"><div class="ftl r"></div><div class="ftl y"></div><div class="ftl g"></div></div>
+                <div class="feat-win-body">
+                  <div class="feat-page">
+                    <div style="font-size:9.5px;color:#b0b0b0;margin-bottom:7px">Results from the latest run:</div>
+                    <div style="background:#1c1c1c;border:1px solid #3a3a3a;border-radius:4px;height:40px;display:flex;align-items:center;justify-content:center">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4a4a4a" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                    </div>
+                    <div style="font-size:8.5px;color:#5a5a5a;margin-top:4px;text-align:center;margin-bottom:2px">chart_comparison.png</div>
+                    <div class="feat-sep"></div>
+                    <div class="feat-title">Paste and drop images</div>
+                    <div class="feat-desc">Drag or paste image files directly into the editor. Clipboard screenshots are saved automatically to an <code>assets/</code> folder beside your document.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Write -->
+        <div class="feature-group">
+          <div class="feature-group-hdr">Write</div>
+          <div class="feature-grid">
+
+            <div class="feat-card">
+              <div class="feat-win">
+                <div class="feat-win-chrome"><div class="ftl r"></div><div class="ftl y"></div><div class="ftl g"></div></div>
+                <div class="feat-win-body">
+                  <div class="feat-page">
+                    <div style="font-size:9.5px;color:#9d9d9d;font-family:Consolas,monospace;margin-bottom:4px">**Results** show a *clear* trend</div>
+                    <div style="font-size:9.5px;color:#f5f5f5;margin-bottom:8px"><strong>Results</strong> show a <em>clear</em> trend</div>
+                    <div style="border-top:1px solid #2f2f2f;padding-top:6px;font-size:8.5px;color:#5a5a5a;font-family:Consolas,monospace;margin-bottom:2px">cursor here → raw syntax<br>elsewhere → rendered</div>
+                    <div class="feat-sep"></div>
+                    <div class="feat-title">Live rich rendering</div>
+                    <div class="feat-desc">Headings, bold, italics, links, and images render as you type. Raw markdown is only shown right where your cursor is — no separate preview pane to toggle.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Page guides — continuous page, guide marks in margin only -->
+            <div class="feat-card">
+              <div class="feat-win">
+                <div class="feat-win-chrome"><div class="ftl r"></div><div class="ftl y"></div><div class="ftl g"></div></div>
+                <div class="feat-win-body">
+                  <div class="feat-page">
+                    <div style="font-size:9.5px;font-weight:700;color:#f5f5f5;margin-bottom:3px">Section 2: Methodology</div>
+                    <div style="font-size:8.5px;color:#b0b0b0;line-height:1.4">The analysis uses a weighted average across all test cases to normalise for outlier effects...</div>
+                    <!-- guide: bleeds past 14px padding + 8px canvas to card edge on each side -->
+                    <div style="margin:6px -22px;height:8px;display:flex;align-items:center">
+                      <div style="width:22px;height:1px;background:rgba(155,155,155,0.28);flex-shrink:0"></div>
+                      <div style="flex:1"></div>
+                      <div style="width:22px;height:1px;background:rgba(155,155,155,0.28);flex-shrink:0"></div>
+                    </div>
+                    <div style="font-size:9px;color:#b0b0b0;opacity:0.45;margin-bottom:2px">Section 3: Results</div>
+                    <div class="feat-sep"></div>
+                    <div class="feat-title">Page guides</div>
+                    <div class="feat-desc">Write in one continuous flow with no interruptions. Subtle guides show exactly where each page will fall on export — what you see while writing is what you get in the PDF.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="feat-card">
+              <div class="feat-win">
+                <div class="feat-win-chrome"><div class="ftl r"></div><div class="ftl y"></div><div class="ftl g"></div></div>
+                <div class="feat-win-body">
+                  <div class="feat-page">
+                    <div style="font-size:9.5px;color:#9d9d9d;margin-bottom:6px">Standard deviation formula:</div>
+                    <div style="background:#1c1c1c;border:1px solid #2f2f2f;border-radius:5px;padding:8px 12px;font-size:13px;color:#f0f0f0;text-align:center;letter-spacing:0.02em;margin-bottom:2px">
+                      σ = <span style="font-family:serif;font-size:15px">√</span>(<span style="font-family:serif">Σ</span>(xᵢ − μ)² ÷ N)
+                    </div>
+                    <div class="feat-sep"></div>
+                    <div class="feat-title">Math with KaTeX</div>
+                    <div class="feat-desc">Inline math with <code>$…$</code> and block equations with <code>$$…$$</code>. Formulas render live via KaTeX, with editable source and dedicated toolbar buttons.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="feat-card">
+              <div class="feat-win">
+                <div class="feat-win-chrome"><div class="ftl r"></div><div class="ftl y"></div><div class="ftl g"></div></div>
+                <div class="feat-win-body">
+                  <div class="feat-page">
+                    <table style="width:100%;border-collapse:collapse;font-size:9px;margin-bottom:8px">
+                      <tr style="border-bottom:1px solid #3f3f3f">
+                        <th style="color:#f5f5f5;font-weight:700;padding:3px 0;text-align:left">Method</th>
+                        <th style="color:#f5f5f5;font-weight:700;padding:3px 0;text-align:left">Accuracy</th>
+                      </tr>
+                      <tr style="border-bottom:1px solid #2f2f2f">
+                        <td style="color:#b0b0b0;padding:3px 0">Baseline</td>
+                        <td style="color:#b0b0b0;padding:3px 0">84.2%</td>
+                      </tr>
+                      <tr>
+                        <td style="color:#b0b0b0;padding:3px 0">Method A</td>
+                        <td style="color:#b0b0b0;padding:3px 0">91.7%</td>
+                      </tr>
+                    </table>
+                    <div style="display:flex;gap:5px;font-size:9px;color:#b0b0b0;margin-bottom:3px">
+                      <span style="width:9px;height:9px;background:#9d9d9d;border-radius:2px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:6px;color:#242424;margin-top:1px">✓</span>
+                      Submit draft by Friday
+                    </div>
+                    <div style="display:flex;gap:5px;font-size:9px;color:#b0b0b0;margin-bottom:2px">
+                      <span style="width:9px;height:9px;border:1.5px solid #5a5a5a;border-radius:2px;flex-shrink:0;margin-top:1px"></span>
+                      Review with supervisor
+                    </div>
+                    <div class="feat-sep"></div>
+                    <div class="feat-title">Tables and task lists</div>
+                    <div class="feat-desc">Tab through table cells, Enter to add rows. Checkbox task lists render cleanly and round-trip to plain markdown without losing structure.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="feat-card">
+              <div class="feat-win">
+                <div class="feat-win-chrome"><div class="ftl r"></div><div class="ftl y"></div><div class="ftl g"></div></div>
+                <div class="feat-win-body">
+                  <div class="feat-page">
+                    <div style="font-size:10px;font-weight:700;color:#f5f5f5;margin-bottom:7px">Contents</div>
+                    <div style="display:flex;align-items:baseline;margin-bottom:3px">
+                      <span style="font-size:9px;color:#d0d0d0;flex-shrink:0">Introduction</span>
+                      <span style="flex:1;border-bottom:1px dotted #4a4a4a;margin:0 4px 2px"></span>
+                      <span style="font-size:9px;color:#9d9d9d;flex-shrink:0">1</span>
+                    </div>
+                    <div style="display:flex;align-items:baseline;margin-bottom:3px">
+                      <span style="font-size:9px;color:#d0d0d0;flex-shrink:0">Methodology</span>
+                      <span style="flex:1;border-bottom:1px dotted #4a4a4a;margin:0 4px 2px"></span>
+                      <span style="font-size:9px;color:#9d9d9d;flex-shrink:0">3</span>
+                    </div>
+                    <div style="display:flex;align-items:baseline;margin-bottom:2px">
+                      <span style="font-size:9px;color:#d0d0d0;flex-shrink:0">Results</span>
+                      <span style="flex:1;border-bottom:1px dotted #4a4a4a;margin:0 4px 2px"></span>
+                      <span style="font-size:9px;color:#9d9d9d;flex-shrink:0">7</span>
+                    </div>
+                    <div class="feat-sep"></div>
+                    <div class="feat-title">Table of contents</div>
+                    <div class="feat-desc">Insert a TOC block that builds from your headings with real page numbers. Three visual styles: Classic (dotted leaders), Simple, and Minimal.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Page breaks — two pages with canvas gap between them -->
+            <div class="feat-card">
+              <div class="feat-win">
+                <div class="feat-win-chrome"><div class="ftl r"></div><div class="ftl y"></div><div class="ftl g"></div></div>
+                <div class="feat-win-body">
+                  <div class="feat-page" style="margin-bottom:0;border-radius:4px 4px 0 0">
+                    <div style="font-size:9px;color:#b0b0b0">...end of the introduction.</div>
+                  </div>
+                  <!-- canvas gap with page break indicator -->
+                  <div style="display:flex;align-items:center;gap:5px;padding:3px 12px">
+                    <div style="flex:1;border-top:1.5px dashed #3a3a3a"></div>
+                    <span style="font-size:7.5px;color:#5a5a5a">Page Break</span>
+                    <div style="flex:1;border-top:1.5px dashed #3a3a3a"></div>
+                  </div>
+                  <div class="feat-page" style="margin-top:0;border-radius:0 0 4px 4px">
+                    <div style="font-size:9px;font-weight:600;color:#f5f5f5;opacity:0.5;margin-bottom:2px">Section 2: Methodology</div>
+                    <div class="feat-sep"></div>
+                    <div class="feat-title">Page breaks</div>
+                    <div class="feat-desc">Insert a hard break with <strong style="color:#b0b0b0">Ctrl+Enter</strong>, by typing <code>--pagebreak</code>, or from the Insert menu. Forces a real page break in the exported PDF.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="feat-card">
+              <div class="feat-win">
+                <div class="feat-win-chrome"><div class="ftl r"></div><div class="ftl y"></div><div class="ftl g"></div></div>
+                <div class="feat-win-body">
+                  <div class="feat-page">
+                    <div style="text-align:center;font-size:14px;font-weight:700;color:#f5f5f5;margin-bottom:6px">Chapter 3: Results</div>
+                    <div style="font-size:9px;color:#b0b0b0;line-height:1.4;margin-bottom:2px">The collected data supports the hypothesis across all three test conditions...</div>
+                    <div class="feat-sep"></div>
+                    <div class="feat-title">Paragraph and image alignment</div>
+                    <div class="feat-desc">Set any paragraph or heading to left, centre, or right from the toolbar. Images can be aligned independently and arranged in multi-image rows.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="feat-card">
+              <div class="feat-win">
+                <div class="feat-win-chrome"><div class="ftl r"></div><div class="ftl y"></div><div class="ftl g"></div></div>
+                <div class="feat-win-body">
+                  <div class="feat-page">
+                    <div style="font-size:9.5px;color:#c0c0c0;line-height:1.5">
+                      This approach was first described by Smith et al.<sup style="color:#da892a;font-size:8px">1</sup> and later refined in subsequent work.<sup style="color:#da892a;font-size:8px">2</sup>
+                    </div>
+                    <div style="border-top:1px solid #2f2f2f;margin-top:10px;padding-top:6px;margin-bottom:2px">
+                      <div style="font-size:8.5px;color:#6a6a6a"><sup>1</sup> Smith et al., 2021 — Nature Methods, p. 412</div>
+                      <div style="font-size:8.5px;color:#6a6a6a;margin-top:2px"><sup>2</sup> Jones &amp; Park, 2022 — JMLR vol. 23</div>
+                    </div>
+                    <div class="feat-sep"></div>
+                    <div class="feat-title">Footnotes</div>
+                    <div class="feat-desc">Standard <code>[^1]</code> syntax, auto-renumbered as you add or move them. Hover a marker to preview it inline. Placed at the bottom of the correct page on export.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="feat-card">
+              <div class="feat-win">
+                <div class="feat-win-chrome"><div class="ftl r"></div><div class="ftl y"></div><div class="ftl g"></div></div>
+                <div class="feat-win-body">
+                  <div class="feat-page">
+                    <div style="background:#0d1117;border:1px solid #2f2f2f;border-radius:6px;padding:9px 11px;font-family:Consolas,'Courier New',monospace;font-size:10px;line-height:1.55;margin-bottom:2px">
+                      <span style="color:#8b949e;font-style:italic"># normalise to [0, 1]</span><br>
+                      <span style="color:#d2a8ff">def</span> <span style="color:#e1e4e8">normalise</span>(x, lo, hi):<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff7b72">return</span> (x <span style="color:#ff7b72">-</span> lo) <span style="color:#ff7b72">/</span> (hi <span style="color:#ff7b72">-</span> lo)
+                    </div>
+                    <div class="feat-sep"></div>
+                    <div class="feat-title">Code blocks</div>
+                    <div class="feat-desc">Fenced code blocks with syntax highlighting across 16 languages. Code pasted from AI tools is automatically formatted as a proper code block.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Export & Files -->
+        <div class="feature-group">
+          <div class="feature-group-hdr">Export &amp; Files</div>
+          <div class="feature-grid">
+
+            <!-- Accurate PDF export — PDF viewer -->
+            <div class="feat-card">
+              <div class="feat-win">
+                <div class="feat-win-chrome" style="background:#3d3d3d;border-bottom-color:#2a2a2a">
+                  <span style="font-size:9px;color:#c8c8c8;font-family:'Segoe UI',sans-serif;flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis">Q3 Analysis Report.pdf</span>
+                  <span style="font-size:9px;color:#999;font-family:'Segoe UI',sans-serif;white-space:nowrap;margin-left:8px">1 / 4 · 100%</span>
+                </div>
+                <div class="feat-win-body" style="padding:0">
+                  <div style="background:#525659;padding:14px;display:flex;align-items:center;justify-content:center;min-height:130px">
+                    <div style="background:#fff;width:78%;border-radius:1px;padding:12px 14px;box-shadow:0 2px 14px rgba(0,0,0,0.55)">
+                      <div style="font-size:10px;font-weight:700;color:#1a1a1a;text-align:center;margin-bottom:5px;font-family:'Segoe UI',sans-serif">Q3 Analysis Report</div>
+                      <div style="font-size:7.5px;color:#444;line-height:1.5;font-family:'Segoe UI',sans-serif">This report outlines methodology, key findings, and recommendations for the next evaluation cycle.</div>
+                      <div style="display:flex;justify-content:space-between;margin-top:10px;border-top:0.5px solid #e0e0e0;padding-top:4px">
+                        <span style="font-size:6.5px;color:#aaa;font-family:'Segoe UI',sans-serif">Q3 Report</span>
+                        <span style="font-size:6.5px;color:#aaa;font-family:'Segoe UI',sans-serif">1</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feat-text">
+                    <div class="feat-sep"></div>
+                    <div class="feat-title">Accurate PDF export</div>
+                    <div class="feat-desc">One click. The page layout in the editor — breaks, alignment, TOC page numbers — is exactly the layout in the PDF. Configurable page size and margins.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PDF bookmarks — PDF viewer with sidebar panel -->
+            <div class="feat-card">
+              <div class="feat-win">
+                <div class="feat-win-chrome" style="background:#3d3d3d;border-bottom-color:#2a2a2a">
+                  <span style="font-size:9px;color:#c8c8c8;font-family:'Segoe UI',sans-serif;flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis">Q3 Analysis Report.pdf</span>
+                  <span style="font-size:9px;color:#999;font-family:'Segoe UI',sans-serif;white-space:nowrap;margin-left:8px">2 / 4 · 100%</span>
+                </div>
+                <div class="feat-win-body" style="padding:0">
+                  <div style="background:#525659;display:flex;align-items:stretch;min-height:130px">
+                    <!-- bookmarks panel — part of the viewer UI, not a page -->
+                    <div style="background:#3a3a3a;width:88px;flex-shrink:0;padding:8px 9px;border-right:1px solid #2e2e2e">
+                      <div style="font-size:6px;color:#888;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;margin-bottom:8px">Bookmarks</div>
+                      <div style="font-size:7.5px;color:#79c0ff;margin-bottom:5px;font-family:'Segoe UI',sans-serif">Introduction</div>
+                      <div style="font-size:7.5px;color:#79c0ff;margin-bottom:5px;padding-left:7px;font-family:'Segoe UI',sans-serif">Background</div>
+                      <div style="font-size:7.5px;color:#79c0ff;margin-bottom:5px;font-family:'Segoe UI',sans-serif">Methodology</div>
+                      <div style="font-size:7.5px;color:#79c0ff;margin-bottom:5px;font-family:'Segoe UI',sans-serif">Results</div>
+                      <div style="font-size:7.5px;color:#c8c8c8;font-family:'Segoe UI',sans-serif">Conclusion</div>
+                    </div>
+                    <!-- PDF page in the viewer area -->
+                    <div style="flex:1;padding:12px 10px;display:flex;justify-content:center;align-items:flex-start">
+                      <div style="background:#fff;width:100%;border-radius:1px;padding:9px 10px;box-shadow:0 2px 12px rgba(0,0,0,0.5)">
+                        <div style="font-size:9px;font-weight:700;color:#1a1a1a;text-align:center;margin-bottom:4px;font-family:'Segoe UI',sans-serif">Q3 Analysis Report</div>
+                        <div style="font-size:7px;color:#444;line-height:1.45;font-family:'Segoe UI',sans-serif">Findings outline the methodology and key results across all conditions...</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feat-text">
+                    <div class="feat-sep"></div>
+                    <div class="feat-title">PDF bookmarks</div>
+                    <div class="feat-desc">Every heading becomes a bookmark in the exported PDF — the kind that appear in Adobe Reader's sidebar so readers can jump directly to any section.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Headers and footers — PDF viewer -->
+            <div class="feat-card">
+              <div class="feat-win">
+                <div class="feat-win-chrome" style="background:#3d3d3d;border-bottom-color:#2a2a2a">
+                  <span style="font-size:9px;color:#c8c8c8;font-family:'Segoe UI',sans-serif;flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis">Q3 Analysis Report.pdf</span>
+                  <span style="font-size:9px;color:#999;font-family:'Segoe UI',sans-serif;white-space:nowrap;margin-left:8px">2 / 9 · 100%</span>
+                </div>
+                <div class="feat-win-body" style="padding:0">
+                  <div style="background:#525659;padding:14px;display:flex;align-items:center;justify-content:center;min-height:155px">
+                    <!-- PDF page with flush header and footer bands -->
+                    <div style="background:#fff;width:82%;border-radius:1px;box-shadow:0 2px 14px rgba(0,0,0,0.55);overflow:hidden">
+                      <div style="background:#f5f5f5;border-bottom:0.5px solid #d8d8d8;padding:5px 10px;display:flex;justify-content:space-between;align-items:center">
+                        <span style="font-size:7px;color:#555;font-family:'Segoe UI',sans-serif">Q3 Analysis</span>
+                        <span style="font-size:7px;color:#555;font-family:'Segoe UI',sans-serif">Page 2 of 9</span>
+                        <span style="font-size:7px;color:#555;font-family:'Segoe UI',sans-serif">Confidential</span>
+                      </div>
+                      <div style="padding:10px 10px 8px;font-size:7.5px;color:#444;line-height:1.55;font-family:'Segoe UI',sans-serif">
+                        This section presents the key findings from the Q3 evaluation period, drawing on data collected across all test conditions.
+                      </div>
+                      <div style="background:#f5f5f5;border-top:0.5px solid #d8d8d8;padding:5px 10px;display:flex;justify-content:space-between;align-items:center">
+                        <span style="font-size:7px;color:#555;font-family:'Segoe UI',sans-serif">July 2026</span>
+                        <span style="font-size:7px;color:#888;font-family:'Segoe UI',sans-serif">Draft</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feat-text">
+                    <div class="feat-sep"></div>
+                    <div class="feat-title">Headers and footers</div>
+                    <div class="feat-desc">Configure left, centre, and right zones for both. Use <code>{title}</code>, <code>{page}</code>, and <code>{pages}</code> tokens filled in automatically at export.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="feat-card">
+              <div class="feat-win">
+                <div class="feat-win-chrome"><div class="ftl r"></div><div class="ftl y"></div><div class="ftl g"></div></div>
+                <div class="feat-win-body">
+                  <div class="feat-page">
+                    <div style="background:#0d1117;border:1px solid #2f2f2f;border-radius:5px;padding:9px 11px;font-family:Consolas,'Courier New',monospace;font-size:10px;line-height:1.6;color:#c0c0c0;margin-bottom:2px">
+                      <span style="color:#da892a"># Q3 Analysis Report</span><br><br>
+                      This report presents <span style="color:#f5f5f5">**findings**</span> from...<br><br>
+                      <span style="color:#da892a">## Methodology</span><br><br>
+                      We applied a <span style="color:#f5f5f5">*weighted*</span> approach...
+                    </div>
+                    <div class="feat-sep"></div>
+                    <div class="feat-title">Clean markdown files</div>
+                    <div class="feat-desc">Every document is a plain <code>.md</code> file you own. Store it anywhere, open it in any editor, put it in version control. No proprietary format, no vendor lock-in.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Saguinus is currently free during live testing —
+        <a href="releases.html">see the latest release</a> or
+        <a href="sponsor.html">become a sponsor</a>.
+      </p>
+      <p>
+        Found a bug or something unclear?
+        <a href="https://www.reddit.com/r/Saguinus" target="_blank" rel="noopener">Post on r/Saguinus</a>.
+      </p>
+      <p><a href="terms.html">Terms of Use</a></p>
+    </footer>
+  </body>
+</html>
